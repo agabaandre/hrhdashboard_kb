@@ -1,3 +1,5 @@
+ 
+
  <aside class="main-sidebar" style="font-size: 17px">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -36,16 +38,16 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://hris.health.go.ug/reports/ahpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
-            <li><a href="http://hris.health.go.ug/reports/umdpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
-            <li><a href="http://hris.health.go.ug/reports/unmc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UNMC</a></li>
-            <li><a href="http://hris.health.go.ug/reports/pc/person_last_reg.html" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
+            <li><a href="http://154.72.196.18/reports/ahpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
+            <li><a href="http://154.72.196.18/reports/umdpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
+            <li><a href="http://154.72.196.18/reports/unmc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UNMC</a></li>
+            <li><a href="http://154.72.196.18/reports/pc/person_last_reg.html" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
            
           </ul>
         </li>
           
         <li>
-          <a href="http://hris.health.go.ug/iHRIS/dev/chwr" target="_blank">
+          <a href="http://154.72.196.18/iHRIS/dev/chwr" target="_blank">
             <i class="fa fa-envelope"></i> <span>CHWR</span>
           </a>
         </li>
@@ -59,10 +61,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://hris.health.go.ug/ahpc-qualify" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
-            <li><a href="http://hris.health.go.ug/umdpc" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
+            <li><a href="http://154.72.196.18/ahpc-qualify" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
+            <li><a href="http://154.72.196.18/umdpc" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
             <li><a href="http://196.0.11.102/unmc" target="_blank"><i class="fa fa-circle-o"></i> UNMC</a></li>
-            <li><a href="http://hris.health.go.ug/pharmacy_society" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
+            <li><a href="http://154.72.196.18/pharmacy_society" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
            
           </ul>
         </li>
@@ -76,8 +78,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://hris.health.go.ug/Train" target="_blank"><i class="fa fa-circle-o"></i> In Service Training</a></li>
-            <li><a href="http://hris.health.go.ug/iHRIS/releases/4.1/DES" target="_blank"><i class="fa fa-circle-o"></i> DES</a></li>
+            <li><a href="http://154.72.196.18/Train" target="_blank"><i class="fa fa-circle-o"></i> In Service Training</a></li>
+            <li><a href="http://154.72.196.18/iHRIS/releases/4.1/DES" target="_blank"><i class="fa fa-circle-o"></i> DES</a></li>
          </ul>
         </li>
           
@@ -105,7 +107,7 @@
          
         
         <li>
-          <a href="http://hris.health.go.ug/attendance" target="_blank">
+          <a href="http://154.72.196.18/attendance" target="_blank">
             <i class="fa fa-envelope"></i> <span>Duty Roster/Attendance</span>
           </a>
         </li>
