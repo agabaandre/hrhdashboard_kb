@@ -97,7 +97,7 @@
         </li>
           
           <li>
-          <a href="http://hris.health.go.ug/districts" target="_blank">
+          <a href="http://hris.health.go.ug/national" target="_blank">
             <i class="fa fa-envelope"></i> <span>National Manage</span>
           </a>
         </li>
