@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>HRHIS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en-us" />
+<meta name="robots" content="all" />
+<meta http-equiv="imagetoolbar" content="false" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="author" content="Development by IntraHealth International, Inc.  http://www.intrahealth.org/  Website graphic design by DesignHammer Media Group LLC, Building Smarter Websites http://www.designhammer.com" />
+<meta name="copyright" content="" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<link rel="Shortcut Icon" href="logo/favicon.ico" />
+<style type="text/css">
+  * {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font: 62.5% Arial, Helvetica, sans-serif;
+	color: #333;
+	background-color: #bbbbac;
+}
+span.buffered_errors{ 
+        margin:1em;
+        padding:1em;
+	font: bold 1.4em Arial, Helvetica, sans-serif;
+	color: #000000;
+ }
+
+h1, h2, h3, h4, p, ul, ol, blockquote {
+	padding-bottom: 1em;
+}
+ul, ol, blockquote {
+	margin-left: 32px;
+	line-height: 1.3em;
+}
+h1 {
+	font: lighter 1.7em Arial, Helvetica, sans-serif;
+	color: #336;
+	padding-bottom: 1.4em;
+}
+h1 .subhead {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+h2 {
+	font: bold 1.4em Arial, Helvetica, sans-serif;
+	color: #69c;
+}
+h3 {
+	font: bold 1.1em Verdana, Arial, Helvetica, sans-serif;
+	color: #036;
+	padding-top: 1em;
+}
+h4 {
+	font: normal 1.1em Verdana, Arial, Helvetica, sans-serif;
+	color: #c30;
+	padding-bottom: 0.6em;
+}
+p {
+	font: 1.1em Verdana, Arial, Helvetica, sans-serif;
+}
+hr {
+	border: 0;
+	color: #f0f0f0;
+	background-color: #f0f0f0;
+	height: 1px;
+	margin: .5em 0 1em;
+}
+a {
+	color: #069;
+	text-decoration: underline;
+	outline: none;
+}
+a:active {
+	outline: none;
+}
+a:hover {
+	color: #069;
+	text-decoration: none;
+}
+a:visited {
+	color: #39C;
+	text-decoration: underline;
+}
+a:visited:hover {
+	color: #39C;
+	text-decoration: none;
+}
+img {
+	border: 0;
+}
+
+
+
+/* structure styles ----------------------------------------------------------*/
+
+#siteHeadWrap {
+	background: transparent url(logo/subpage_fade_bkgd.png) repeat-x;
+	height: 130px;
+}
+#siteHeader {
+	height: 130px;
+	position: relative;
+	/* width: 778px; */
+	width: 90%;
+	margin: 0 auto;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background: #fff url(logo/siteheader_bkgd.gif) repeat-x;
+	text-align: left;
+}
+#siteHeader img#siteLogo {
+	float: left;
+	padding: 3px;
+	margin: 13px 16px 0;
+}
+#siteHeader #siteLogo a {
+	
+}
+#siteHeader #siteLogo a:hover {
+	
+}
+#siteHeader p#siteName {
+	font: 2.8em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 22px 0 0;
+	color: #036;
+}
+#siteHeader p#siteTag {
+	font: 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #9d9d8a;
+}
+
+#siteOuterWrap {
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left:1px;
+	padding-right:1px;
+	/*width: 780px; */
+	width: 90%;
+	background-color: #fff;
+}
+
+#siteInnerWrap {
+    background: transparent url(logo/navbar_bkgd.gif) repeat-y 147px 0;
+	text-align: left;
+	height: 1%; /* IE7 hack */
+}
+
+#siteContent {
+    /*width: 590px; */
+	height: 1%;
+	min-height: 125px;
+	height: auto !important;
+/*	height: 280px;*/
+	padding: 14px;	
+	margin:0px;
+	margin-left: 160px;
+	background: transparent url(logo/sitecontent_bkgd.gif) repeat-x;
+}
+
+#siteFooter {
+	padding: 14px;
+	margin: 14px;
+	border-top: 1px solid #ebebeb;
+	text-align: left;
+}
+#siteFooter p {
+	font: 0.9em Verdana, Arial, sans-serif;
+	color: #999;
+	padding-bottom: 34px;
+}
+#siteFooter a, #siteFooter a:visited {
+	color: #69c;
+}
+#siteFooter img#cp {
+	padding: 0 46px 0 66px;
+	border-right: 1px solid #f1f7f8;
+}
+#siteFooter img#usaid {
+	padding: 0 46px;
+	border-right: 1px solid #f1f7f8;
+}
+#siteFooter img#moh {
+	padding-left: 46px;
+}
+
+
+/* top horizontal Nav ------------------------------------------ */
+
+#inlineNavWrap {
+	position: absolute;
+	top: 96px;
+	left: 0;
+	width: 100%;
+}
+#inlineNavBar {
+    /*width: 778px; */
+    /*width: 100%;*/
+	height: 33px;
+	background: #1d68ae url(logo/inlinenav_fade_bkgd.png) repeat-x;
+}
+
+#inlineNavBar ul {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+#inlineNavBar ul li {
+	display: inline;
+}
+
+#inlineNavBar ul li a {
+	font: bold 11px/13px Arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	float: left;
+	display: block;
+	border-right: solid 1px #367ebc;
+	padding: 9px 24px;
+	margin: 1px 0;
+	white-space: nowrap;
+}
+
+#inlineNavBar ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #0f4c85;
+}
+
+#inlineNavBar ul li a.active,
+#inlineNavBar ul li a.active:hover {
+	color: #036;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	background: #fff url(logo/inline_active_bkgd.gif) repeat-x left bottom;
+}
+
+
+/* leftNav ---------------------------------------------------- */
+
+#navBar {
+	/*float: left;*/
+	width: 160px;
+	margin-top: 14px;
+    position: absolute;
+    *float: left;
+    *position: relative;
+}
+#navBar ul {
+	margin: 0;
+	list-style: none;
+	font: bold 11px Arial, Helvetica, sans-serif;
+    /*
+	position: absolute;
+	top: 143px;
+    */
+}
+#navBar ul li {
+	display: inline;
+}
+#navBar li a {
+	margin: 0 5px;
+	padding: 8px 10px;
+	text-decoration: none;
+	display: block;
+	width: 131px;
+	color: #333;
+	border-bottom: 1px solid #dde5f0;
+}
+#navBar li a:hover,
+#navBar li a.active:hover {
+	color: #c30;
+	/*background-color: #e2e2db;*/
+}
+
+#navBar li a.active {
+	color: #2c80ce;
+	/*background-color: #f1f7ff;*/
+	/*background: transparent url(logo/arrow_sub.gif) no-repeat 2px 12px;*/
+}
+#navBar li a.active:hover {
+	
+}
+
+/* -- subNav -- */
+#navBar ul ul {
+	font: bold 10px Arial, sans-serif;
+	padding: 0;
+	position: static;
+}
+#navBar ul ul li a {
+	padding: 3px 1px 5px 21px;
+	color: #2c80ce;
+	background: transparent url(logo/arrow_sub.gif) no-repeat 12px 6px;
+	/*width: 126px;*/
+}
+#navBar ul ul li a.active {
+	background-color: #f1f7ff;
+}
+#navBar ul ul li a:hover,
+#navBar ul ul li a.active:hover {
+	
+}
+/* Main Background Color ------------------------ */
+body {
+	background-color: #467495;
+}
+
+/* Page Header and subheads --------------------- */
+h1 {
+	color: #1e5483;
+}
+h2 {
+	color: #406002;
+}
+h3 {
+	color: #036;
+}
+h4 {
+	color: #369;
+}
+
+/* page links colors ---------------------------- */
+a {
+	color: #996;
+}
+a:hover {
+	color: #069;
+}
+a:visited {
+	color: #39C;
+}
+a:visited:hover {
+	color: #39C;
+}
+
+/* site banner name colors --------------------- */
+#siteHeader p#siteName {
+	color: #09345f;
+}
+#siteHeader p#siteTag {
+	color: #a1bdd2;
+} 
+
+/* Horizontal NavBar --------------------------- */
+
+#inlineNavBar {
+	background-color: #7b9f0e;
+}
+#inlineNavBar ul li a {
+	color: #fff;
+	border-right-color: #5d8108;
+}
+
+#inlineNavBar ul li a:hover {
+	color: #fff;
+	background-color: #4b6f06;
+}
+
+#inlineNavBar ul li a.active,
+#inlineNavBar ul li a.active:hover {
+	color: #5d8108;
+}
+#inlineNavBar ul#sysUser li a:hover {
+	background-color: #406002;
+}
+
+#inlineNavBar ul#sysUser li a {
+	border-left-color: #446504;
+}
+
+/* laft-hand NavBar ---------------------------- */
+#navBar li a {
+	color: #333;
+	border-bottom-color: #e0e0e0;
+}
+#navBar li a:hover,
+#navBar li a.active:hover {
+	color: #1e5483;
+}
+#navBar li a.active {
+	color: #8a8a40;
+}
+/* -- subNav -- */
+#navBar ul ul li a {
+	color: #8a8a40;
+}
+#navBar ul ul li a.active {
+	background-color: #eaeadd;
+}
+
+
+#welcomeIntro {
+	position: absolute;
+	top: 153px;
+	left: 25px;
+}
+
+#welcomeIntro h1 {
+	font: normal 2.4em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 17px 0 0.5em;
+}
+
+#welcomeIntro p {
+	font: 1.2em Arial, Helvetica, sans-serif;
+}
+
+#welcomeIntro strong {
+	font-weight: normal;
+	color: #036;
+}
+
+#welcomeIntro img {
+	float: right;
+	margin: 0 22px 0 30px;
+	background: transparent url(logo/loggin_pic_bkgd.png) no-repeat;
+	padding: 4px 7px 9px;
+}
+
+#loginPage #siteInnerWrap {
+	background-image: none;
+}
+
+#loginPage #siteHeadWrap {
+	height: 325px;
+	background: transparent url(logo/login_fade_bkgd.png) repeat-x;
+}
+#loginPage #siteHeader {
+	height: 325px;
+	background: #fff url(logo/login_siteheader_bkgd.gif) repeat-x;
+}
+#loginPage #siteContent {
+	width: 578px;
+	padding: 38px 0 14px 24px;
+	float: none;
+    margin-left: 0px;
+}
+
+#siteContent h2 {
+	color: #c30;
+	font: 1.6em/1em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 6px 0 10px;
+	/*padding-left: 27px;*/
+}
+#siteContent h2 a {
+	color: #c30;
+	text-decoration: none;
+	padding: 0 0 1px 27px;
+	background: transparent url(logo/icon_default.gif) no-repeat 0 0;
+}
+#siteContent h2 a:hover {
+	text-decoration: underline;
+}
+
+
+#loginPage #siteContent p {
+	padding: 0 0 0.4em 27px;
+	
+	font: 1.1em Verdana, Arial, sans-serif;
+}
+
+</style>
+
+<script language="JavaScript" type="text/javascript">  
+    function gotourl(url){  
+     window.location= url;  
+    }  
+    </script> 
+</head>
+
+<body id="loginPage">
+
+<div id="siteHeadWrap"><!-- ie6 redundant tag fix -->
+<div id="siteHeader">
+
+<a name="top"><img src="logo/moh_logo.png" alt="" width="78" height="80" id="siteLogo" /></a>
+<p id="siteName">Human Resources For Health Information Systems</p>
+<p id="siteTag">iHRIS Manage and Qualify</p>
+
+<div id="inlineNavWrap"><!-- ie6 redundant tag fix -->
+<div id="inlineNavBar">
+<ul>
+		
+	  <li><a href="#" target="_help">Home</a></li>
+	<li><a href="http://hris.health.go.ug/reports/">Reports</a></li>
+	<li><a href="http://www.capacityproject.org/hris/contact">Feedback</a></li>
+	
+	<li><a href="http://www.capacityproject.org/hris/" target="_new">iHRIS Website</a></li>
+	<li><a href="http://hris.health.go.ug/demo_manage">iHRIS Manage Demo</a></li>
+        <li><a href="http://hris.health.go.ug/train_demo">iHRIS Train Demo</a></li>
+        <li><a href="http://hris.health.go.ug/iHRIS/releases/4.1/DES_demo">DES Demo</a></li>
+        <li><a href="http://hris.health.go.ug/iHRIS/dev/demo-chwr">CHWR Demo</a></li>
+	 <li><a href="http://hris.health.go.ug/dutyrosterdemo">Duty Roster/Attendance Tracking Demo</a></li>
+</ul>
+</div><!-- /inlineNavBar -->
+</div><!-- /inlineNavWrap -->
+
+
+
+<div id="welcomeIntro">
+<img src="logo/moh_complex.jpg" alt="Ministry of Health Building (photo)" width="308" height="200" />
+<h1>Welcome</h1>
+<p>
+This is the <strong>HRHIS</strong> Web Page where you get access human resources data and 
+reports for The Central Ministry Of Health Organisations, Regional Referrals, Proffessional Councils and some districts.
+
+The Various Systems where set up with support form partners such as <strong> USAID funded Uganda Capacity Program, 
+Baylor College of Medicine Children's Foundation - Uganda and WHO </strong>.
+
+</p><p>The Systems are based  on iHRIS Manage and Qualify which are a free, Open Source software solution developed by 
+<a href="http://www.capacityproject.org">The Capacity Project</a>, an innovative global 
+initiative to help developing countries build and sustain the health workforce.
+</p>
+</div><!-- /welcomeIntro -->
+</div><!-- /siteHeader -->
+</div><!-- /siteHeadWrap -->
+
+<div id="siteOuterWrap">
+
+<div id="siteInnerWrap">
+
+<div id="siteContent" />
+<form method="post">
+<table border="0" cellspacing="0" cellpadding="0" class="loginTable">
+
+
+<tr><td colspan="2"><h2>MOH, National Referral Hospitals and Other Organisations</h2><span style="font-size: 12px;">Select institution/organisation</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+					    <option value="#">Select one</option>
+						<!--<option Value="http://hris.health.go.ug/National">National</option>-->
+						<option Value="http://hris.health.go.ug/moh_manage">Ministry Of Health Headquarters</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.2.1/mulago_manage">Mulago National Referral Hospital</option>
+						<option Value="http://hris.health.go.ug/butabika">Butabika National Referral Hospital</option>
+						<option Value="http://hris.health.go.ug/cancer_manage">Uganda Cancer Institute</option>
+						<option Value="http://hris.health.go.ug/uhi">Uganda Heart Institute</option>
+						<option Value="http://hris.health.go.ug/blood_bank">Uganda Blood Transfusion Service</option>
+						<!--<option Value="http://hris.health.go.ug/uvri">Uganda Virus Research Institute</option>-->
+					</select> </td>
+      </tr>
+
+<tr><td colspan="2"><h2>Regional Referral Hospitals</h2><span style="font-size: 12px;">Select institution/organisation:</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+					    <option value="#">Select one</option>
+						<option Value="http://hris.health.go.ug/central_moh_referral">Regional Referral Hospitals</option>
+						</select> </td></tr><tr>
+<tr><td colspan="2"><h2>Community Health Workers Registry</h2><span style="font-size: 12px;">Select:</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+                                            <option value="#">Select one</option>
+                                                <option Value="http://hris.health.go.ug/iHRIS/dev/chwr/">Community Health Workers Registry</option>
+                                                </select> </td></tr><tr>
+<tr><td colspan="2"><h2>Professional Councils</h2><span style="font-size: 12px;">Options:</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+					    <option value="#">Select one</option>
+					        <option Value="http://hris.health.go.ug/ahpc-qualify">Allied Health Proffessional Council</option>
+						<option Value="http://hris.health.go.ug/umdpc">Uganda Medical And Dental Practitioners Council</option>
+						<option Value="http://196.0.11.102/unmc">Uganda Nurses And Midwives Council</option>
+						<option Value="http://hris.health.go.ug/pharmacy_society">The Pharmaceutical Society of Uganda and Pharmacy Board</option
+					</select> </td>
+      </tr><tr>
+
+<tr><td colspan="2"><h2>Training</h2><span style="font-size: 12px;">Options:</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+					    <option value="#">Select one</option>
+						<option Value="http://hris.health.go.ug/Train">In-Service Training</option>
+					       <option Value="http://hris.health.go.ug/iHRIS/releases/4.1/DES">Directorate Of Education Standards</option>
+						</select> </td>
+      </tr><tr>
+<tr><td colspan="2"><h2>Private Not-For Profit Organisations</h2><span style="font-size: 12px;">Select institution/organisation:</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+                                            <option value="#">Select one</option>
+                                                <option Value="http://hris.ucmb.co.ug/iHRIS/4.2.0/ucmb_manage">Uganda Catholic Medical Bureau</option>
+						 <option Value="http://hris.health.go.ug/ummb">Uganda Muslim Medical Bureau</option>
+						 <option Value="http://hris.upmb.co.ug:8080/upmb">Uganda Protestant Medical Bureau</option>
+                        			 <option Value="http://hris.health.go.ug/ucbhca">Uganda Community Based Health Care Association </option>
+						<option Value="http://hris.health.go.ug/uomb">Uganda Orthodox Medical Bureau </option>              
+         </select> </td></tr><tr>
+<tr>
+
+
+						<!--<option Value="http://hris.health.go.ug/arua_rrh_manage">Arua</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.4/fortportal_rrh_manage">Fortportal</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.4/gulu_rrh_manage2">Gulu</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.4/hoima_rrh_manage">Hoima</option>
+						<option Value="http://hris.health.go.ug/jinja_rrh_manage">Jinja</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.4/kabale_rrh_manage">Kabale</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.4/lira_rrh_manage">Lira</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.4/masaka_rrh_manage">Masaka</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.5/mbale_rrh_manage">Mbale</option>
+						<option Value="http://hris.health.go.ug/mbarara_rrh_manage">Mbarara</option>
+						<option Value="http://hris.health.go.ug/moroto_rrh_manage">Moroto</option>
+						<option Value="http://hris.health.go.ug/iHRIS/4.1.4/mubende_rrh_manage">Mubende</option>
+						<option Value="http://hris.health.go.ug/soroti_rrh_manage">Soroti</option>-->	
+					</select> </td>
+      </tr><tr>
+<td colspan="2"><h2>Districts And Municipalities</h2><span style="font-size: 12px;">Options:</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+					    <option value="#">Select one</option>
+						<!--<option Value="http://hris.health.go.ug/iHRIS/4.1.9/index.html">Districts</option>-->
+						<option Value="http://hris.health.go.ug/districts_manage">Districts</option>
+						<option Value="http://hris.health.go.ug/municipal_manage">Municipalities</option>
+					</select> </td>
+      </tr>
+
+
+<tr>
+
+<tr><td colspan="2"><h2>Duty Roster/Attendance Tracking</h2><span style="font-size: 12px;">Options:</span></td>
+    </tr><tr><td><select name="URL" onchange="gotourl(this.value)" >
+                                            <option value="#">Select one</option>
+                                                
+                                               <option Value="http://hris.health.go.ug/hrattendance">Duty Roster/Attendance Tracking</option>
+                                                </select> </td>
+      </tr>
+
+
+</table></form>
+</div>
+	<br style="clear: both;" />
+
+</div><!-- /siteInnerWrap -->
+
+<div id='StretchPage'></div>
+<div id="siteFooter">
+  <p> HelpDesk Contact <a href="mailto:helpdesk.hris@health.go.ug">helpdesk.hris@health.go.ug</a>
+  <!--<a href="http://www.usaid.gov/"><img src="logo/usaid_logo.gif" alt="USAID (logo)" width="148" height="46" id="usaid"></a>
+  
+  <a href="http://www.intrahealth.org/"><img src="logo/Intrahealth_Logo_RGB.png" alt="IntraHealth (logo)" width="158" height="46" id="intrahealth"></a>
+  <a href="http://www.health.go.ug/index.htm"><img src="logo/moh_logo.png" alt="Uganda Ministry of Health (logo)" width="78" height="80" id="moh"></a>-->
+  </p>
+
+iHRIS Manage
+
+</div><!-- /siteFooter -->
+</div><!-- /siteOuterWrap -->
+
+</body>
+</html>

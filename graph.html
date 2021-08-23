@@ -1,0 +1,29 @@
+<html>
+    <head><title></title></head>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>   
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <body>
+<div class="input-group date datepicker"><input  name="month" type="text" size="30" class="form-control month"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div>
+    
+    </body>
+<script type="text/javascript">
+$(document).ready(function() {
+$('.month').datepicker({
+    		format: "MM-yyyy",
+            startView: "months", 
+            minView: "months",
+            minViewMode: 1,
+		});
+        
+    $('.year').datepicker({
+    		format: "yyyy",
+            startView: "year", 
+            minView: "year",
+            minViewMode: 2,
+		});  
+});
+</script>  
+</html>

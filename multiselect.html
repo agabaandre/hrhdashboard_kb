@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <!-- Include Twitter Bootstrap and jQuery: -->
+    <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     
+    <!-- Include the plugin's CSS and JS: -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css" type="text/css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+
+        <script type="text/javascript">
+        $('#example-multiple-selected').multiselect();
+    </script>
+    <!-- Note the missing multiple attribute! -->
+    <select id="example-multiple-selected" multiple="multiple">
+        <option value="1">Option 1</option>
+        <option value="2" selected="selected">Option 2</option>
+        <!-- Option 3 will be selected in advance ... -->
+        <option value="3" selected="selected">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+    </select>
+
+
+</body>
+</html>
+
