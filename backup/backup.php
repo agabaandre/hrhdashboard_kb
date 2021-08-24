@@ -11,13 +11,13 @@ $ignore_list = array('old_distance','municipal_manage','moh_manage','mohattendan
 
 $suffix = date('Y-m-d');
 
-$db = mysqli_connect( 'localhost', $db_user, $db_pass, $database )
+$db = mysqli_connect( 'localhost', $db_user, $db_pass, $database );
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     exit();
 }
 
-$dbs = mysqli_query($db, "SELECT schema_name FROM schemata where schema_name NOT IN ( '" . implode( "','", $ignore_list ) . "' )" )
+$dbs = mysqli_query($db, "SELECT schema_name FROM schemata where schema_name NOT IN ( '" . implode( "','", $ignore_list ) . "' )" );
 $backups = array();
 while( $data = mysqli_fetch_assoc($dbs) ) {
     $backups[] = $data['schema_name'];
@@ -31,7 +31,7 @@ foreach( $backups as $backup_db ) {
     if ( !is_dir( $use_dir ) ) {
         mkdir( $use_dir );
     }       
-    $result = mysqli_query($db,"SELECT table_name FROM tables WHERE table_schema = '$backup_db' AND table_name not like 'hippo_%' AND table_name not like 'zebra_%'" ) 
+    $result = mysqli_query($db,"SELECT table_name FROM tables WHERE table_schema = '$backup_db' AND table_name not like 'hippo_%' AND table_name not like 'zebra_%'" ) ;
   
 
     $tables = array();
