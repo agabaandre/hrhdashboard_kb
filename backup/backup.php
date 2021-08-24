@@ -11,7 +11,7 @@ $ignore_list = array('old_distance','municipal_manage','moh_manage','mohattendan
 
 $suffix = date('Y-m-d');
 
-$db = mysqli_connect( 'localhost', $db_user, $db_pass, $database );
+$db = mysqli_connect( '172.27.1.109', $db_user, $db_pass, $database );
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     exit();
