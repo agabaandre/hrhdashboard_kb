@@ -38,16 +38,16 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://hris2.health.go.ug/reports/ahpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
-            <li><a href="http://hris2.health.go.ug/reports/umdpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
-            <li><a href="http://hris2.health.go.ug/reports/unmc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UNMC</a></li>
-            <li><a href="http://hris2.health.go.ug/reports/pc/person_last_reg.html" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
+            <li><a href="https://hris2.health.go.ug/reports/ahpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
+            <li><a href="https://hris2.health.go.ug/reports/umdpc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
+            <li><a href="https://hris2.health.go.ug/reports/unmc/registration.html" target="_blank"><i class="fa fa-circle-o"></i> UNMC</a></li>
+            <li><a href="https://hris2.health.go.ug/reports/pc/person_last_reg.html" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
            
           </ul>
         </li>
           
         <li>
-          <a href="http://hris2.health.go.ug/iHRIS/dev/chwr" target="_blank">
+          <a href="https://hris2.health.go.ug/iHRIS/dev/chwr" target="_blank">
             <i class="fa fa-envelope"></i> <span>CHWR</span>
           </a>
         </li>
@@ -61,10 +61,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://hris2.health.go.ug/ahpc-qualify" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
-            <li><a href="http://hris2.health.go.ug/umdpc" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
-            <li><a href="http://196.0.11.102/unmc" target="_blank"><i class="fa fa-circle-o"></i> UNMC</a></li>
-            <li><a href="http://hris2.health.go.ug/pharmacy_society" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
+            <li><a href="https://hris2.health.go.ug/ahpc-qualify" target="_blank"><i class="fa fa-circle-o"></i> AHPC</a></li>
+            <li><a href="https://hris2.health.go.ug/umdpc" target="_blank"><i class="fa fa-circle-o"></i> UMDPC</a></li>
+            <li><a href="https://196.0.11.102/unmc" target="_blank"><i class="fa fa-circle-o"></i> UNMC</a></li>
+            <li><a href="https://hris2.health.go.ug/pharmacy_society" target="_blank"><i class="fa fa-circle-o"></i> UPB</a></li>
            
           </ul>
         </li>
@@ -78,8 +78,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://hris2.health.go.ug/Train" target="_blank"><i class="fa fa-circle-o"></i> In Service Training</a></li>
-            <li><a href="http://hris2.health.go.ug/iHRIS/releases/4.1/DES" target="_blank"><i class="fa fa-circle-o"></i> DES</a></li>
+            <li><a href="https://hris2.health.go.ug/Train" target="_blank"><i class="fa fa-circle-o"></i> In Service Training</a></li>
+            <li><a href="https://hris2.health.go.ug/iHRIS/releases/4.1/DES" target="_blank"><i class="fa fa-circle-o"></i> DES</a></li>
          </ul>
         </li>
           
@@ -92,14 +92,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://hris.ucmb.co.ug/ucmb_manage" target="_blank"><i class="fa fa-circle-o"></i> UCMB</a></li>
-            <li><a href="http://hris.upmb.co.ug:8080/upmb" target="_blank"><i class="fa fa-circle-o"></i>  UPMB</a></li>
+            <li><a href="https://hris.ucmb.co.ug/ucmb_manage" target="_blank"><i class="fa fa-circle-o"></i> UCMB</a></li>
+            <li><a href="https://hris.upmb.co.ug:8080/upmb" target="_blank"><i class="fa fa-circle-o"></i>  UPMB</a></li>
          
           </ul>
         </li>
           
           <li>
-          <a href="http://hris.health.go.ug/national" target="_blank">
+          <a href="https://hris.health.go.ug/national" target="_blank">
             <i class="fa fa-envelope"></i> <span>National Manage</span>
           </a>
         </li>
@@ -107,7 +107,7 @@
          
         
         <li>
-          <a href="http://hris2.health.go.ug/attendance" target="_blank">
+          <a href="https://hris2.health.go.ug/attendance" target="_blank">
             <i class="fa fa-envelope"></i> <span>Duty Roster/Attendance</span>
           </a>
         </li>
