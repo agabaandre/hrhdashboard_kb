@@ -22,11 +22,11 @@
            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="center">iHRIS Demos
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><a href="http://hris.health.go.ug/demo_manage" target="_blank">Manage </a></li>
-                <li><a href="http://hris.health.go.ug/train_demo/login" target="_blank">Train </a></li>
-                <li><a href="http://hris.health.go.ug/iHRIS/releases/4.1/DES_demo/login" target="_blank">DES </a></li>
-                 <li><a href="http://hris.health.go.ug/iHRIS/dev/demo-chwr/" target="_blank">CHWR </a></li>
-                <li><a href="http://hris.health.go.ug/dutyrosterdemo/" target="_blank">DR/Attend </a></li>
+                <li><a href="http://hris2.health.go.ug/demo_manage" target="_blank">Manage </a></li>
+                <li><a href="http://hris2.health.go.ug/train_demo/login" target="_blank">Train </a></li>
+                <li><a href="http://hris2.health.go.ug/iHRIS/releases/4.1/DES_demo/login" target="_blank">DES </a></li>
+                 <li><a href="http://hris2.health.go.ug/iHRIS/dev/demo-chwr/" target="_blank">CHWR </a></li>
+                <li><a href="http://hris2.health.go.ug/dutyrosterdemo/" target="_blank">DR/Attend </a></li>
 
             </ul>
                                
