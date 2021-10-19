@@ -341,7 +341,8 @@
 		
 
 		   if($row['approved']==0){
-			  $per_fill =0;
+			 // $per_fill =0;
+			 $per_fill = round(($row['filled']/$row['filled'])*100,0);
 		      }else{
 			  $per_fill = round(($row['filled']/$approved)*100,0);
 		     }

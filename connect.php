@@ -1,6 +1,7 @@
 <?php 
+error_reporting(0);
 
-$mysqli = mysqli_connect("172.27.1.109","ihris_manage","managi123","hrhdashboard");
+$mysqli = mysqli_connect("localhost","root","","hrh_dashboard");
 
 	
 ?>
