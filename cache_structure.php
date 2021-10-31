@@ -1,15 +1,9 @@
 <?php 
 
     include('connect.php');
-
-   
-
-            
              $SQL =	mysqli_query($mysqli,"DELETE FROM structure WHERE approved=0 ");
 
              $SQL = mysqli_query($mysqli, "TRUNCATE TABLE structure_approved");
-
-
 
              $sql = "SELECT facility_name,facility_id FROM staff WHERE facility_type_id = 'facility_type|DHO' ";
 
@@ -21,15 +15,9 @@
 
                     $facility_name = preg_replace('/[^\p{L}\p{N}\s]/u', '', $row['facility_name']);
                  
-                  
-
                     $sql1 = mysqli_query($mysqli,"UPDATE staff SET facility_name='$facility_name' WHERE facility_id='$facility_id'");
 	      }
-                 
-
              $sql = "SELECT facility_name,facility_type_name,region_name,facility_id,dhis_facility_id,institution_type,district_name FROM total_facilities_temp_districts WHERE facility_type_name IN ('Regional Referral Hospital','Ministry','National Referral Hospital','Specialised National Facility') ";
-
-
 
              $result = mysqli_query($mysqli, $sql);
 
@@ -37,7 +25,7 @@
 
                     $facility_type_name = $row['facility_type_name'];
 
-		    $region_name = $row['region_name'];
+		                $region_name = $row['region_name'];
 
                     $facility_name = $row['facility_name'];
                  

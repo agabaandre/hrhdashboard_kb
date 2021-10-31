@@ -1,5 +1,7 @@
 
 <?php 
+
+
 $backupdir = "/var/HRH_bkp";
 $db_user = 'ihris_manage';
 $db_pass = 'managi123';
@@ -45,7 +47,7 @@ foreach( $backups as $backup_db ) {
 
 }
 
-mysql_close($db);
+mysqli_close($db);
 exec( "find $backupdir -type f -mtime +7 -not -name \"*-01.sql.bz2\" -print -exec rm {} \;" );
 
 ?>
