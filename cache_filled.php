@@ -40,13 +40,14 @@
 
 		
           //loop where facility_name works fine
-                $sql3 = "SELECT facility_id,dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_name,job_classification,job_category,cadre_name,salary_scale,approved,case when gender='Male' then count(person_id) else 0 end AS male,case when gender='Female' then count(person_id) else 0 end AS female
-                FROM   staff  GROUP BY dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_classification,job_category,cadre_name,salary_scale,approved;";
-                   //oldquery   
-                // SELECT facility_id,dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_name,job_classification,job_category,cadre_name,salary_scale,approved,              
-                // (case when gender = 'Male' then filled else 0 end) male,
-                // (case when gender = 'Female' then filled else 0 end) female
-                // FROM   staff WHERE facility_name like 'Ministry%'  GROUP BY facility_id,dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_classification,job_category,cadre_name,salary_scale,approved
+                // $sql3 = "SELECT facility_id,dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_name,job_classification,job_category,cadre_name,salary_scale,approved,case when gender='Male' then count(person_id) else 0 end AS male,case when gender='Female' then count(person_id) else 0 end AS female
+                // FROM   staff  GROUP BY dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_classification,job_category,cadre_name,salary_scale,approved;";
+                
+                //oldquery   
+                $sql3 = "SELECT facility_id,dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_name,job_classification,job_category,cadre_name,salary_scale,approved,              
+                (case when gender = 'Male' then filled else 0 end) male,
+                (case when gender = 'Female' then filled else 0 end) female
+                FROM   staff  GROUP BY facility_id,dhis_facility_id,facility_name,facility_type_name,region_name,institution_type,district_name,job_id,dhis_job_id,job_classification,job_category,cadre_name,salary_scale,approved";
                
 
           $result3 = mysqli_query($mysqli, $sql3);
